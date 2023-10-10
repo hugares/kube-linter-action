@@ -57,7 +57,7 @@ runs:
           tar -xf "$TARGET"
         fi
     - name: Lint files
-      shell: bash
+      shell: bash {0}
       run: |
         set -u
         if [[ -z "${{ inputs.config }}" ]]; then
